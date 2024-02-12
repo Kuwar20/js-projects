@@ -1,0 +1,110 @@
+<!-- Declares that this is an HTML5 document -->
+<!DOCTYPE html>
+
+<!-- Opens the HTML document and sets the language to English -->
+<html lang="en">
+
+<!-- Head section contains meta-information about the document -->
+
+<head>
+    <!-- Sets the character set to UTF-8 for proper text encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Configures the viewport for responsive design on various devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the title of the webpage shown in the browser tab -->
+    <title>Project 2</title>
+
+    <!-- Links an external stylesheet (CSS file) to style the HTML content -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<!-- Body section contains the main content of the webpage -->
+
+<body>
+    <!-- Creates a container to hold the entire content of the page -->
+    <div class="container">
+
+        <!-- Creates a section for the To-Do List application -->
+        <div class="todo-app">
+
+            <!-- Displays the heading "To-Do List" with an icon -->
+            <h2>To-Do List <img src="images/icon.png"></h2>
+
+            <!-- Creates a row with an input box and a button for adding tasks -->
+            <div class="row">
+                <!-- Text input for entering new tasks -->
+                <input type="text" id="input-box" placeholder="Add Your Text ">
+
+                <!-- Button that triggers the AddTask() function when clicked -->
+                <button onclick="AddTask()">Add</button>
+            </div>
+
+            <!-- Unordered list to hold the list of tasks -->
+            <ul id="list-container">
+                <!-- List items can be added here, but they are currently commented out -->
+                <!-- <li class="checked">Task 1</li>
+                            <li>Task 2</li>
+                            <li>Task 3</li>
+                            <li>Task 4</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Links the SweetAlert2 library for displaying stylish alert dialogs -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- Links an external JavaScript file for additional functionality -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- dom tree  (here html is the head of human and head and body element are two hands in different direction) -->  
+<!-- 
+document
+│
+└───html
+    │
+    └───head
+    │   │
+    │   ├───meta [charset="UTF-8"]
+    │   │
+    │   ├───meta [name="viewport", content="width=device-width, initial-scale=1.0"]
+    │   │
+    │   ├───title
+    │   │   │
+    │   │   └───TextNode: "Project 2"
+    │   │
+    │   └───link [rel="stylesheet", href="/style.css"]
+    │
+    └───body
+        │
+        ├───div [class="container"]
+        │   │
+        │   └───div [class="todo-app"]
+        │       │
+        │       ├───h2
+        │       │   │
+        │       │   ├───TextNode: "To-Do List"
+        │       │   │
+        │       │   └───img [src="images/icon.png"]
+        │       │
+        │       ├───div [class="row"]
+        │       │   │
+        │       │   ├───input [type="text", id="input-box", placeholder="Add Your Text "]
+        │       │   │
+        │       │   └───button [onclick="AddTask()"]
+        │       │       │
+        │       │       └───TextNode: "Add"
+        │       │
+        │       └───ul [id="list-container"]
+        │           │
+        │            li elements are currently commented out 
+        │
+        └───script [src="https://cdn.jsdelivr.net/npm/sweetalert2@10"]
+        │
+        └───script [src="/script.js"] 
+    -->

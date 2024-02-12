@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #002339;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 12%;
+}
+
+.display {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span {
+    color: #00b894;
+    border-bottom: 4px solid #00b894;
+    padding-bottom: 7px;
+}
+
+.display img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 24px
+}
+
+.password-input {
+    padding-right: 30px; /* Make space for the eye icon */
+    width: 550px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.eye-icon {
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+}
+
+.container button img{
+    width: 28px;
+    margin-right: 10px;
+}
+
+.container button {
+    background: #019f55;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 16px 26px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

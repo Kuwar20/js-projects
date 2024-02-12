@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Project 8</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <p>Enter your text or Url</p>
+        <br>
+        <input type="text" placeholder="Text or Url" id="qrText" onkeypress="handleKeyPress(event)">
+
+        <button onclick="generateQr()">Generate Qr</button>
+
+        <div id="imgBox">
+            <img src="" id="qrImage">
+        </div>
+            <button onclick="downloadQr()" style="background-color: #06c006;">Download Qr Code</button>
+        </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

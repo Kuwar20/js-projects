@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    /* giving width to the container */
+    min-width: 100vh;
+    /* giving min-width to the container, without width it will always be 100% that is full screen width, and width it override the width and applies its value to the class,
+    for ex here , width is 10 % but min width is 50vh so the width of the container is 50%, but if the width is 100% and min width is 50, then we will get the 100% width,so whichever is highest is applied to the container */
+    min-height: 100vh;
+    /*  make the height of the container 100% of the viewport height */
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    /* this color is applied to all the element inside the container */
+    padding-top: 4%;
+    /* it will increase 4 % of the width of the container from the top */
+    padding-left: 10%;
+    /* it will increase 10 % of the width of the container from the left */
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    /* align the items in the center */
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container h1 img {
+    width: 60px;
+}
+
+.container button img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #9418fd, #571094);
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 20px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img {
+    width: 25px;
+    /* here we used to reduce the size of the image */
+    position: absolute;
+    bottom: 15px;
+    /* here we used to position the image from the bottom */
+    right: 15px;
+    /* here we used to position the image from the right */
+    cursor: pointer;
+}

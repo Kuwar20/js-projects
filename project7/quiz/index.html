@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project 7</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="preloader">
+    </div>
+    <div class="quote-box">
+        <h2>Quote of the day</h2>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading... </span>
+        <div>
+            <button onclick="getQuote(api_url)">New Quote</button>
+            <button onclick="tweetQuote()">
+                <img src="/quiz/asset/twitter-logo.png" />Tweet
+            </button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+
+</html>

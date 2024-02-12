@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    padding: 10px;
+}
+
+.calculator {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.calculator iconify-icon {
+    font-size: 60px;
+    margin-left: 40px;
+    margin-top: 16px;
+    color: #fff;
+
+}
+
+.calculator h1 {
+    font-size: 60px;
+}
+
+.calculator h1 span {
+    color: yellow;
+}
+
+.input-box {
+    margin-left: 10%;
+    /* 10% smaller from left side*/
+    margin-top: 5%;
+    /* 5% smaller from top side*/
+    margin-right: 40%;
+    /* 10% smaller from right side*/
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    flex: 1;
+    /* to mak the element use full width of the component it is in */
+    margin-right: 20px;
+    padding: 14px 20px;
+    /* 14px from top and bottom and 20px from left and right */
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-box button {
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    /* 15px from top and bottom and 30px from left and right */
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#result {
+    margin-left: 10%;
+    /* 10% smaller from left side*/
+    margin-top: 0.5%;
+    /* 5% smaller from top side*/
+    margin-right: 40%;
+    /* 10% smaller from right side*/
+    padding: 35px;
+    align-items: center;
+}
+
+#result span {
+    color: #e3e313
+}

@@ -1,0 +1,130 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,400;0,700;1,700&family=Montserrat:ital,wght@0,300;0,400;1,400;1,500&family=Playfair+Display:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background: #bbc6fa;
+}
+
+.quote-box {
+  background: #fff;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* it will change the position of the box to the center of the webpage */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  /* it made the text in the center of the box */
+  -webkit-box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.quote-box h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.quote-box h2::after{
+  content: '';
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.quote-box blockquote{
+  font-size: 26px;
+  min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+  content: '"';
+  /* it will add the double quotes before and after the element */
+}
+
+.quote-box span{
+  display: block;
+  margin-top: 10px;
+  float: right;
+  /* it will move the text to the right side of the box */
+position: relative;
+}
+
+.quote-box span::before{
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.quote-box div{
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quote-box button{
+  background: rgb(23, 124, 229);
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid rgb(23, 124, 229);
+  width: 150px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.quote-box button img{
+  width: 20px;
+  margin-right: 10px;
+}
+
+.quote-box button:nth-child(2){
+  background: transparent;
+  color: #333;
+}
+
+#preloader{
+  background: #ffffff url(asset/Running\ heart.gif) no-repeat center;
+  /* if the gif is very big in size then use background size : x % where is the relevant size  */
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
